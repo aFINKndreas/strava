@@ -1,5 +1,3 @@
-import fetch, { BodyInit } from 'node-fetch'
-
 import { RefreshTokenRequest, RefreshTokenResponse } from './types'
 
 type RequestParams = {
@@ -94,6 +92,6 @@ export class Request {
       return (await response.json()) as Response
     }
 
-    return (response as unknown) as Response
+    return response as unknown as Response
   }
 }

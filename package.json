@@ -1,5 +1,5 @@
 {
-  "name": "strava",
+  "name": "strava-without-node-fetch",
   "version": "2.2.2",
   "description": "This library is a fully typed JavaScript wrapper of the Strava JSON API",
   "main": "dist/index.js",
@@ -29,8 +29,7 @@
     "prepare": "tsdx build"
   },
   "dependencies": {
-    "form-data": "^4.0.0",
-    "node-fetch": "2.6.6"
+    "form-data": "^4.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
@@ -39,7 +38,6 @@
     "@semantic-release/github": "^8.0.2",
     "@semantic-release/npm": "^8.0.3",
     "@semantic-release/release-notes-generator": "^10.0.2",
-    "@types/node-fetch": "^2.5.12",
     "nock": "^13.1.4",
     "semantic-release": "^18.0.0",
     "tsdx": "^0.14.1",
