@@ -6,6 +6,7 @@ import {
   Lap,
   SummaryActivity,
   SummaryAthlete,
+  Photo,
 } from '../models'
 import { Request } from '../request'
 
@@ -138,9 +139,9 @@ export class Activities {
   async getPhotosByActivityId(
     params: GetPhotosByActivityIdRequest,
     access_token?: string,
-  ): Promise<Lap[]> {
+  ): Promise<Photo[]> {
     const { id, ...query } = params
-    return await this.request.makeApiRequest<Lap[]>(
+    return await this.request.makeApiRequest<Photo[]>(
       'get',
       `/activities/${id}/photos`,
       { query, access_token },

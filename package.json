@@ -1,6 +1,6 @@
 {
   "name": "strava-without-node-fetch",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "This library is a fully typed JavaScript wrapper of the Strava JSON API",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
